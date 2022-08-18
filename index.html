@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>sokoban</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="img/box.jpeg">
+</head>
+
+<body onkeyup="handleKey(event)" onload="initGame()">
+
+  <div class = 'test'></div>
+
+  <h1>Sokoban Game</h1>
+  <button class="btn" onclick="levelOne()"><h1 class="msg">🎯</h1></button class="btn">
+  
+  <div class="wrapper">
+    <p>time: <span id="seconds">00</span>:<span id="tens">00</span>  seconds</p>
+  </div> 
+  
+  <h2 class="counter-steps">steps:</h2>
+  <h2 class="counter-scores">scores:</h2>
+
+  <button class="level" onclick="levelOne()">Level 1</button>
+  <button class="level" onclick="levelTwo()">Level 2</button>
+  <button class="level" onclick="levelThree()">Level 3</button>
+
+
+  <div>
+    <button class="btn expose" onclick="nextStepsLevelOne()"> expose steps <br /> level one</button>
+    <button class="btn expose" onclick="nextStepsLevelTwo() "> expose steps <br /> level two</button>
+    <button class="btn expose" onclick="nextStepsLevelThree() "> expose steps <br /> level three</button>
+  </div>
+
+  <div>
+    <button class=" btn undo" onclick="undo()"> 🔙 </br>UNDO</button>
+    <button class = "btn" class="undo" onclick="withoutElements()"> 🔑🔓 </br>use undo this game levels </button>
+    <button class=" btn restart" onclick="window.location.reload();"> 🕹 </br>RESTART</button>
+  </div>
+
+  <table>
+    <tbody class="board"></tbody>
+  </table>
+
+  <script src="js/level.js"></script>
+  <script src="js/features.js"></script>
+  <script src="js/solution.js"></script>
+  <script src="js/board.js"></script>
+  <script src="js/util.js"></script>
+  <script src="js/msg.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
