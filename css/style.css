@@ -7,6 +7,7 @@ body {
     padding: 10px;
 }
 
+.board td:hover {background-color: lightsalmon;}
 .cell {width:60px; height:60px;text-align: center ; font-size: 45px;}
 .cell img {width:35px; height:auto}
 .floor {background-color: gray}
